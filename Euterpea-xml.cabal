@@ -34,7 +34,9 @@ library
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      base >=4.7 && <5
+      Euterpea >=2.0.7
+    , base >=4.7 && <5
+    , text
   default-language: Haskell2010
 
 executable Euterpea-xml-exe
@@ -47,8 +49,10 @@ executable Euterpea-xml-exe
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      Euterpea-xml
+      Euterpea >=2.0.7
+    , Euterpea-xml
     , base >=4.7 && <5
+    , text
   default-language: Haskell2010
 
 test-suite Euterpea-xml-test
@@ -62,6 +66,8 @@ test-suite Euterpea-xml-test
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      Euterpea-xml
+      Euterpea >=2.0.7
+    , Euterpea-xml
     , base >=4.7 && <5
+    , text
   default-language: Haskell2010
