@@ -5,7 +5,8 @@ module Lib
     ) where
 
 import qualified Data.Text.IO as T
-import qualified Euterpea as E
+import Euterpea
 
 someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+someFunc = putStrLn "someFun xxc"
+
